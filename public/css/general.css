@@ -1,0 +1,47 @@
+:root {
+    --colorAmarillo:#EAC926;
+    --colorAzul:#03264C;
+    --colorCeleste:#1259c3;
+    --colorGrisOscuro:#666;
+    --colorGrisClaro:#ebebeb;
+    --colorVerde:#39b54a;
+    --tipografia:'Roboto';
+}
+
+button {
+    display: block;
+}
+
+form {
+    padding-left: 30px;
+}
+
+body {
+    font-family: var(--tipografia);
+    font-size: 12px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding-left: 0;
+}
+
+h3{
+    font-size: 16px;
+}
+
+footer{
+border: 10px solid var(--colorGrisClaro)
+}

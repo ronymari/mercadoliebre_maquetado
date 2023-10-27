@@ -1,0 +1,48 @@
+.logo {
+    max-width: 40%;
+    height: auto;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+#barra-busqueda {
+    display: flex;
+    width: 200px;
+}
+
+.home__header{
+    background-color: var(--colorAmarillo);
+}
+
+.header__nav--menu ul li a {
+    color: black;
+}
+
+.mensaje-oferta {
+    text-align: center;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.burger-menu i {
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--colorCeleste);
+    color: white;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.precio-producto {
+    font-size: 18px;
+}
+
+.precio-descuento {
+    font-size: 16px;
+}
