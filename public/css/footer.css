@@ -1,6 +1,3 @@
-/* footer.css */
-
-/* Estilos para los iconos del footer */
 .icono-footer {
     font-size: 28px;
     color: var(--colorCeleste);
@@ -8,7 +5,6 @@
     margin-bottom: 10px;
 }
 
-/* Estilos para la sección del footer */
 .home__footer__section {
     text-align: center;
     padding: 15px;
@@ -22,8 +18,7 @@
     margin: 0 0 10px;
 }
 
-/* Estilos para el contorno del footer */
 footer {
     border: 10px solid var(--colorGrisClaro);
-    padding: 20px; /* Añade relleno para separar el contenido del borde */
+    padding: 20px; 
 }
