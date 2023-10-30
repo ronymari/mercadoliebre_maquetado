@@ -1,13 +1,44 @@
+/* general.css */
+
+/* Definición de variables de colores y tipografía */
 :root {
-    --colorAmarillo:#EAC926;
-    --colorAzul:#03264C;
-    --colorCeleste:#1259c3;
-    --colorGrisOscuro:#666;
-    --colorGrisClaro:#ebebeb;
-    --colorVerde:#39b54a;
-    --tipografia:'Roboto';
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --tipografia: 'Roboto', sans-serif;
 }
 
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: var(--tipografia);
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para títulos y listas */
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Estilos para botones y formularios */
 button {
     display: block;
 }
@@ -16,32 +47,33 @@ form {
     padding-left: 30px;
 }
 
-body {
-    font-family: var(--tipografia);
-    font-size: 12px;
-    margin: 0;
+/* Estilos para el pie de página */
+footer {
+    border: 10px solid var(--colorGrisClaro);
+    padding: 20px; /* Añade relleno para separar el contenido del borde */
 }
 
-h2 {
-    font-size: 24px;
+/* Estilos para los elementos de los artículos */
+.article-box {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-ul li {
-    list-style: none;
+/* Estilos para la sección principal */
+main {
+    width: 90%;
+    margin: 0 auto;
 }
 
-a{
-    text-decoration: none;
+/* Estilos para los artículos */
+article {
+    margin-bottom: 10px;
 }
 
-ul{
-    padding-left: 0;
-}
-
-h3{
-    font-size: 16px;
-}
-
-footer{
-border: 10px solid var(--colorGrisClaro)
+/* Estilos para dispositivos con ancho mínimo de 361px (tablet) y superiores */
+@media (min-width: 361px) {
+    .article-box {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }

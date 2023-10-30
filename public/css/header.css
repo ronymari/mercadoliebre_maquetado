@@ -1,3 +1,4 @@
+
 .logo {
     max-width: 40%;
     height: auto;
@@ -5,12 +6,23 @@
     padding-bottom: 20px;
 }
 
-#barra-busqueda {
+
+.barra_busqueda {
     display: flex;
-    width: 200px;
+    align-items: center; 
 }
 
-.home__header{
+#barra_busqueda {
+    flex: 1; 
+}
+
+.barra_busqueda button {
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+
+.home__header {
     background-color: var(--colorAmarillo);
 }
 
@@ -18,31 +30,47 @@
     color: black;
 }
 
-.mensaje-oferta {
-    text-align: center;
-}
-
 .burger-menu {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 10px;
 }
 
 .burger-menu i {
-    margin-bottom: 10px;
-    display: inline-block;
-    text-align: center;
     font-size: 25px;
     background-color: var(--colorCeleste);
     color: white;
     padding: 10px;
-    border-radius: 20%;
+    border-radius: 20%; 
 }
 
-.precio-producto {
-    font-size: 18px;
+@media (max-width: 380px) {
+    .header__nav--menu ul:first-child,
+    .header__nav--menu ul:last-child {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+
+    .mensaje-oferta {
+        font-size: 14px; 
+    }
+
+    .precio-producto {
+        font-size: 16px; 
+    }
+
+    .precio-descuento {
+        font-size: 14px; 
+    }
 }
 
-.precio-descuento {
-    font-size: 16px;
+@media (min-width: 426px) {
+    .burger-menu {
+        display: none;
+    }
 }

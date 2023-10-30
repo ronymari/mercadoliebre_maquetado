@@ -1,19 +1,29 @@
+/* footer.css */
+
+/* Estilos para los iconos del footer */
 .icono-footer {
-    font-size: 28px; 
+    font-size: 28px;
     color: var(--colorCeleste);
-    display: inline-block; 
-    margin-bottom: 10px; 
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
+/* Estilos para la sección del footer */
 .home__footer__section {
     text-align: center;
-    padding: 15px; 
+    padding: 15px;
 }
 
 .home__footer__section p {
-    margin: 8px 0; 
+    margin: 8px 0;
 }
 
 .home__footer__section h4 {
-    margin: 0 0 10px; 
+    margin: 0 0 10px;
+}
+
+/* Estilos para el contorno del footer */
+footer {
+    border: 10px solid var(--colorGrisClaro);
+    padding: 20px; /* Añade relleno para separar el contenido del borde */
 }
