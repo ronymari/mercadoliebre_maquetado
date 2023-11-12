@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-
 .logo {
-    width: 45%; /* Ancho deseado */
-    height: 45%; /* Altura ajustada automáticamente para mantener la proporción original */
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 45%; 
+    height: 45%; 
+    border-radius: 10px; 
 }
 
 .barra-busqueda-container {
@@ -33,7 +31,7 @@
     color: #000;
     border: none;
     padding: 5px 10px;
-    width: 40px; /* Establece el ancho del botón */
+    width: 40px; 
 }
 
 .home__header {
@@ -60,7 +58,7 @@
 }
 
 .menu-list li, .user-menu li {
-    margin-right: 10px; /* Ajuste del valor según necesidades */
+    margin-right: 10px; 
 }
 
 .burger-menu {
@@ -69,7 +67,7 @@
     justify-content: center;
     background-color: var(--colorCeleste);
     color: white;
-    width: 35px; /* Ajusta el ancho según sea necesario */
+    width: 35px; 
     height: 35px;
     padding: 10px;
     margin-left: 40%;
@@ -113,14 +111,14 @@
     }
    .barra-busqueda-container {
         width: 50%; 
-        margin-left: 50%; /* Elimina el margen derecho para ajustes en dispositivos móviles */
+        margin-left: 50%; 
     }
     
     .barra-busqueda-input {
         flex-grow: 1;
         border: none;
         padding: 5px;
-        width: calc(100% - 10px); /* Ajuste del valor según necesidades */
+        width: calc(100% - 10px); 
     }
     
     .barra-busqueda-button {
@@ -128,12 +126,11 @@
         color: #000;
         border: none;
         padding: 5px 10px;
-        width: 40px; /* Establece el ancho del botón */
+        width: 40px; 
     }
 }
 
-
-/* Estilos específicos para dispositivos con ancho de pantalla mayor a 425px (tablet y escritorio) */
+/* Estilos específicos para pantalla mayor a 425px (tablet y escritorio) */
 @media (min-width: 426px) {
     .header-nav-menu {
         display: flex;
@@ -158,7 +155,6 @@
         margin-left: 20px;
     }
 
-    /* Ocultar el menú de hamburguesas en tablet y escritorio */
     .burger-menu {
         display: none;
     }

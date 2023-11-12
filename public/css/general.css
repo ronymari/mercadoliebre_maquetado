@@ -18,7 +18,7 @@ body {
 
 .banner-container img {
     width: 100%;
-    height: auto; /* Cambiado a 'auto' para mantener la proporción */
+    height: auto; 
 }
 
 h2 {
