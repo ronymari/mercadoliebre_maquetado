@@ -81,7 +81,7 @@
     .header-nav-menu ul:last-child,
     .menu-list,
     .user-menu {
-        display: none; /* Cambia display: flex a display: none */
+        display: none; 
     }
     
     .mensaje-oferta {
