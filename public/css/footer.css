@@ -1,24 +1,37 @@
 .icono-footer {
     font-size: 28px;
     color: var(--colorCeleste);
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
 }
 
-.home__footer__section {
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section {
     text-align: center;
     padding: 15px;
 }
 
-.home__footer__section p {
+.footer-section p {
     margin: 8px 0;
 }
 
-.home__footer__section h4 {
+.footer-section h4 {
     margin: 0 0 10px;
 }
 
 footer {
     border: 10px solid var(--colorGrisClaro);
     padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
