@@ -1,75 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 .logo {
-    max-width: 40%;
-    height: auto;
-    padding: 40px;
-    padding-bottom: 20px;
+    width: 45%; /* Ancho deseado */
+    height: 45%; /* Altura ajustada automáticamente para mantener la proporción original */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-
-.barra_busqueda {
+.barra-busqueda-container {
     display: flex;
-    align-items: center; 
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px;
+    height: 30px;
 }
 
-#barra_busqueda {
-    flex: 1; 
+.barra-busqueda-input {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    width: calc(100% - 10%); 
 }
 
-.barra_busqueda button {
-    cursor: pointer;
-    margin-left: 10px; 
+.barra-busqueda-button {
+    background: #ffffff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    width: 40px; /* Establece el ancho del botón */
 }
-
 
 .home__header {
     background-color: var(--colorAmarillo);
 }
 
-.header__nav--menu ul li a {
+.header-nav-menu ul li a {
     color: black;
+}
+
+.user_list_conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--colorAmarillo);
+}
+
+.menu-list, .user-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-list li, .user-menu li {
+    margin-right: 10px; /* Ajuste del valor según necesidades */
 }
 
 .burger-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-}
-
-.burger-menu i {
-    font-size: 25px;
     background-color: var(--colorCeleste);
     color: white;
+    width: 35px; /* Ajusta el ancho según sea necesario */
+    height: 35px;
     padding: 10px;
-    border-radius: 20%; 
+    margin-left: 40%;
+    border-radius: 5px;
 }
 
-@media (max-width: 380px) {
-    .header__nav--menu ul:first-child,
-    .header__nav--menu ul:last-child {
-        display: none;
+@media (max-width: 435px) {
+    .header-nav-menu ul:first-child,
+    .header-nav-menu ul:last-child,
+    .menu-list,
+    .user-menu {
+        display: none; /* Cambia display: flex a display: none */
+    }
+    
+    .mensaje-oferta {
+        font-size: 14px;
+    }
+
+    .precio-producto {
+        font-size: 16px;
+    }
+
+    .precio-descuento {
+        font-size: 14px;
+    }
+
+    .user_list_conteiner {
+        flex-direction: column;
+        align-items: center;
     }
 
     .burger-menu {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--colorCeleste);
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
     }
-
-
-    .mensaje-oferta {
-        font-size: 14px; 
+   .barra-busqueda-container {
+        width: 50%; 
+        margin-left: 50%; /* Elimina el margen derecho para ajustes en dispositivos móviles */
     }
-
-    .precio-producto {
-        font-size: 16px; 
+    
+    .barra-busqueda-input {
+        flex-grow: 1;
+        border: none;
+        padding: 5px;
+        width: calc(100% - 10px); /* Ajuste del valor según necesidades */
     }
-
-    .precio-descuento {
-        font-size: 14px; 
+    
+    .barra-busqueda-button {
+        background: #ffffff;
+        color: #000;
+        border: none;
+        padding: 5px 10px;
+        width: 40px; /* Establece el ancho del botón */
     }
 }
 
+
+/* Estilos específicos para dispositivos con ancho de pantalla mayor a 425px (tablet y escritorio) */
 @media (min-width: 426px) {
+    .header-nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .menu-list,
+    .user-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list {
+        justify-content: flex-start;
+        margin-right: 20px;
+    }
+
+    .user-menu {
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+
+    /* Ocultar el menú de hamburguesas en tablet y escritorio */
     .burger-menu {
         display: none;
     }
