@@ -37,7 +37,7 @@
 
 .form__msg-error-login {
     color: red;
-    display: block; /* Cambiado de 'none' a 'block' */
+    display: block; 
 }
 
 .button-login {
