@@ -100,7 +100,7 @@ main {
     border-radius: 50%;
     padding: 5px;
     margin-bottom: 10px;
-    float: right; /* Agregamos esta línea para posicionar a la derecha */
+    float: right; 
 }
 
 .art_1 .icono-camion {
@@ -133,9 +133,9 @@ main {
     justify-content: space-evenly;
 }
 .imagen-separada {
-    border-top: 1px solid var(--colorGrisClaro); /* Puedes ajustar el color según tu preferencia */
-    padding-top: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
-    margin-bottom: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
+    border-top: 1px solid var(--colorGrisClaro); 
+    padding-top: 10px; 
+    margin-bottom: 10px; 
 }
 
 @media (min-width: 768px) {

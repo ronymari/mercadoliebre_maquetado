@@ -14,13 +14,13 @@
     text-align: center;
     padding: 15px;
     box-sizing: border-box;
-    width: 30%; /* Ajusta el ancho según sea necesario */
-    margin: 10px; /* Agrega margen entre las secciones */
+    width: 30%; 
+    margin: 10px; 
 }
 
-/* Media query para ajustar estilos en dispositivos con un ancho de pantalla de hasta 768px (puedes ajustar este valor según tus necesidades) */
+
 @media only screen and (max-width: 440px) {
     .footer-section {
-        width: 100%; /* Hace que las secciones ocupen el ancho completo en pantallas más pequeñas */
+        width: 100%; 
     }
 }
