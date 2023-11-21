@@ -1,37 +1,26 @@
 .icono-footer {
     font-size: 28px;
     color: var(--colorCeleste);
-    display: block;
-    margin-bottom: 10px;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .footer-section {
     text-align: center;
     padding: 15px;
-}
-
-.footer-section p {
-    margin: 8px 0;
-}
-
-.footer-section h4 {
-    margin: 0 0 10px;
-}
-
-footer {
-    border: 10px solid var(--colorGrisClaro);
-    padding: 20px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     box-sizing: border-box;
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    margin: 10px; /* Agrega margen entre las secciones */
+}
+
+/* Media query para ajustar estilos en dispositivos con un ancho de pantalla de hasta 768px (puedes ajustar este valor según tus necesidades) */
+@media only screen and (max-width: 440px) {
+    .footer-section {
+        width: 100%; /* Hace que las secciones ocupen el ancho completo en pantallas más pequeñas */
+    }
 }

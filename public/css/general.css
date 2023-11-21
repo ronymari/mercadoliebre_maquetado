@@ -68,25 +68,49 @@ main {
     border: 1px solid #ccc;
     margin: 10px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.art_1 h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.art_1:hover h3 {
+    opacity: 1;
+}
+
+.art_1:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .art_1 img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 8px; 
     margin-bottom: 10px;
 }
 
 .icono-camion {
-    font-size: 20px;
+    font-size: 13px;
     color: var(--colorVerde); 
     border: 2px solid var(--colorVerde);
     border-radius: 50%;
     padding: 5px;
     margin-bottom: 10px;
+    float: right; /* Agregamos esta línea para posicionar a la derecha */
 }
+
+.art_1 .icono-camion {
+    transition: transform 0.3s ease-in-out;
+}
+
+.art_1:hover .icono-camion {
+    transform: rotate(-90deg);
+}
+
 
 .precio-descuento {
     color: var(--colorVerde);
@@ -95,6 +119,7 @@ main {
 .precio {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .precio-producto,
@@ -106,6 +131,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.imagen-separada {
+    border-top: 1px solid var(--colorGrisClaro); /* Puedes ajustar el color según tu preferencia */
+    padding-top: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
+    margin-bottom: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
 }
 
 @media (min-width: 768px) {
